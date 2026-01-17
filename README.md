@@ -1,16 +1,16 @@
-# The Left-Digit Bias Audit 📉
+# The Left-Digit Bias Audit 
 **Testing if $X.99 pricing actually works in E-Commerce**
 
-📄 **[View the Full Executive Report (PDF)](./Left_Digit_Bias_Report.pdf)**
+**[View the Full Executive Report (PDF)](Left_Digit_Bias_Report.pdf)**
 
-## 📌 Project Overview
+## Project Overview
 Does pricing a product at **$19.99** instead of **$20.00** actually generate more sales? Or is it just marketing folklore?
 
 This project uses **real sales data (185k+ transactions)** and **inferential statistics** to definitively answer: *Does "charm pricing" (ending prices in .99) significantly increase sales volume compared to round pricing (.00)?*
 
 ---
 
-## 🧪 Research Question
+##  Research Question
 **Primary Question:** Do products priced with .99 endings sell more units than products with round (.00) pricing?
 
 **Hypotheses:**
@@ -19,7 +19,7 @@ This project uses **real sales data (185k+ transactions)** and **inferential sta
 
 ---
 
-## 🔍 Key Findings
+##  Key Findings
 **The Verdict: Charm Pricing WORKS... but only for Phones.** 📱
 
 | Product Category | Sales Lift | Statistically Significant? |
@@ -35,7 +35,7 @@ This project uses **real sales data (185k+ transactions)** and **inferential sta
 
 ---
 
-## ⚙️ Methodology
+##  Methodology
 
 ### 1. Data Preparation
 - **Source:** [Electronic Sales Data (Kaggle)](https://www.kaggle.com/datasets/beekiran/sales-data-analysis)
@@ -53,7 +53,7 @@ We moved beyond aggregate averages to test specific product categories, revealin
 
 ---
 
-## 💡 Why This Matters
+## Why This Matters
 
 ### For Businesses:
 - **Strategy:** Stop losing margin on Laptops. Pricing a MacBook at $1999.99 vs $2000.00 yields **zero volume benefit**, so the company is voluntarily losing $0.01 per unit.
@@ -64,17 +64,17 @@ We moved beyond aggregate averages to test specific product categories, revealin
 
 ---
 
-## 🛠 Technical Details
+## Technical Details
 - **Language:** Python 3.9+
 - **Libraries:** Pandas (Data Manipulation), SciPy (Statistics), Seaborn (Visualization)
 - **Report Generation:** LaTeX
 
-## ⚠️ Study Limitations
+## Study Limitations
 - **Observational Data:** This is a historical audit, not a controlled A/B test.
 - **Category Scope:** Results are specific to Electronics. Fashion or Grocery sectors may behave differently.
 - **Seasonality:** The dataset is a single snapshot and may not capture seasonal buying shifts.
 
-## 🧠 What I Learned
+## What I Learned
 1. **Statistical Rigor:** Just because data *looks* different doesn't mean it *is* different. P-values are essential for business credibility.
 2. **Context is King:** Pricing strategies aren't universal. What works for a $500 phone doesn't work for a $1,500 laptop.
 3. **Data Distribution:** Always check for Normality (Bell Curve) before choosing a test. Using a T-Test on this data would have led to false conclusions.
