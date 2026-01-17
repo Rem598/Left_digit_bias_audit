@@ -1,7 +1,7 @@
 # The Left-Digit Bias Audit 
 **Testing if $X.99 pricing actually works in E-Commerce**
 
-**[View the Full Executive Report (PDF)](The_Left-Digit_Bias_Report.pdf)**
+
 
 ## Project Overview
 Does pricing a product at **$19.99** instead of **$20.00** actually generate more sales? Or is it just marketing folklore?
