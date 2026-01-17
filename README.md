@@ -123,5 +123,3 @@ Only phones showed a meaningful, statistically significant increase.
 This project is open source under the MIT License.
 
 ---
-
-**TL;DR:** Charm pricing works for phones (+5.16% sales, p < 0.05) but not for laptops or monitors. Use statistics to make smarter business decisions. 📊✨
