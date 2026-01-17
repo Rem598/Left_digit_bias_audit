@@ -118,7 +118,7 @@ Only phones showed a meaningful, statistically significant increase.
 
 ---
 
-## 📜 License
+## License
 
 This project is open source under the MIT License.
 
