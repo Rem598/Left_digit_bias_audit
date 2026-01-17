@@ -1,4 +1,4 @@
-# The Left-Digit Bias Analysis 🏷️
+# The Left-Digit Bias Audit
 
 **Testing if $X.99 pricing actually works**
 
