@@ -30,7 +30,7 @@ This project uses **real sales data (185k+ transactions)** and **inferential sta
 
 **Bottom Line:** Phones priced at $X.99 sell significantly more units than those priced at $X.00. However, for high-consideration purchases (Laptops), the effect disappears.
 
-![Analysis Chart](./results_chart.png)
+![Analysis Chart](resultschart.png)
 *(Note: Green bars indicate statistical significance at p < 0.05)*
 
 ---
