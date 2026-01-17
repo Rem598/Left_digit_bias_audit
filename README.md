@@ -33,6 +33,8 @@ Do products priced with .99 endings sell more units than products with round (.0
 
 **Bottom Line:** Phones priced at $X.99 sell significantly more units than those priced at $X.00. The effect is real, measurable, and not due to chance.
 
+![Analysis Chart](./results_chart.png)
+*(Note: Green bars indicate statistical significance at p < 0.05)*
 ---
 
 ## Methodology
