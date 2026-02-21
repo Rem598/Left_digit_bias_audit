@@ -59,15 +59,8 @@ We moved beyond aggregate averages to test specific product categories, revealin
 - **Strategy:** Stop losing margin on Laptops. Pricing a MacBook at $1999.99 vs $2000.00 yields **zero volume benefit**, so the company is voluntarily losing $0.01 per unit.
 - **Opportunity:** Aggressively apply .99 pricing to Phones and Accessories to capture the ~5% volume lift.
 
-### For Consumers:
-- **Psychology:** You are statistically more likely to buy a phone at $599.99 than $600.00. The "left digit effect" is real—our brains anchor on the first number we see.
-
 ---
 
-## Technical Details
-- **Language:** Python 3.9+
-- **Libraries:** Pandas (Data Manipulation), SciPy (Statistics), Seaborn (Visualization)
-- **Report Generation:** LaTeX
 
 ## Study Limitations
 - **Observational Data:** This is a historical audit, not a controlled A/B test.
