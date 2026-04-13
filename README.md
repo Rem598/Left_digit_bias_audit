@@ -28,9 +28,10 @@ Charm pricing works, but only for specific product categories.
 
 Phones priced at X.99 sell meaningfully more than those at X.00. For high-consideration purchases like laptops, the effect disappears entirely. Pricing psychology is category-specific.
 
----
 
-## Why This Is Not Obvious
+![Results](https://github.com/Rem598/Left_digit_bias_audit/resultschart.png)---
+
+
 
 The aggregate result across all categories shows almost no effect. You only find the phone signal by testing categories separately. An analyst who stops at the aggregate average would conclude charm pricing does not work and recommend removing it everywhere, which would be wrong for phones and correct for laptops.
 
