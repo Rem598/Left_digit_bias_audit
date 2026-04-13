@@ -1,68 +1,71 @@
-# The Left-Digit Bias Audit 
-**Testing if $X.99 pricing actually works in E-Commerce**
+# The Left-Digit Bias Audit: Does X.99 Pricing Actually Work?
 
-
-
-## Project Overview
-Does pricing a product at **$19.99** instead of **$20.00** actually generate more sales? Or is it just marketing folklore?
-
-This project uses **real sales data (185k+ transactions)** and **inferential statistics** to definitively answer: *Does "charm pricing" (ending prices in .99) significantly increase sales volume compared to round pricing (.00)?*
+Testing whether charm pricing increases sales across 185,000+ e-commerce transactions.
 
 ---
 
-##  Research Question
-**Primary Question:** Do products priced with .99 endings sell more units than products with round (.00) pricing?
+## The Question
+
+Does pricing a product at $19.99 instead of $20.00 actually generate more sales, or is it marketing folklore?
+
+This is one of retail's most widely applied assumptions. Almost every price tag ends in .99. But the assumption is rarely tested with real data. This project tests it directly using inferential statistics on 185,950 transactions across multiple product categories.
 
 **Hypotheses:**
-- **H₀ (Null):** There is no significant difference in sales volume between .99 and .00 pricing.
-- **H₁ (Alternative):** Prices ending in .99 have significantly higher sales volume.
+- H0: There is no significant difference in sales volume between .99 and .00 pricing.
+- H1: Prices ending in .99 generate significantly higher sales volume.
 
 ---
 
-##  Key Findings
-**The Verdict: Charm Pricing WORKS... but only for Phones.** 📱
+## Key Finding
 
-| Product Category | Sales Lift | Statistically Significant? |
-| :--- | :--- | :--- |
-| **Phones** | **+5.16%** | **YES** ($p < 0.001$) |
+Charm pricing works, but only for specific product categories.
+
+| Category | Sales Lift | Significant? |
+|---|---|---|
+| Phones | +5.16% | Yes (p < 0.001) |
 | Laptops | -0.04% | No |
 | Monitors | +0.03% | No |
 
-**Bottom Line:** Phones priced at $X.99 sell significantly more units than those priced at $X.00. However, for high-consideration purchases (Laptops), the effect disappears.
-
-![Analysis Chart](resultschart.png)
-*(Note: Green bars indicate statistical significance at p < 0.05)*
+Phones priced at X.99 sell meaningfully more than those at X.00. For high-consideration purchases like laptops, the effect disappears entirely. Pricing psychology is category-specific, not a universal lever.
 
 ---
 
-##  Methodology
+## Why This Is Not Obvious
 
-### 1. Data Preparation
-- **Source:** [Electronic Sales Data (Kaggle)](https://www.kaggle.com/datasets/beekiran/sales-data-analysis)
-- **Volume:** 185,950 cleaned transactions.
-- **Feature Engineering:** - Parsed prices into **Charm** (.99) vs **Round** (.00).
-  - Categorized products (Phones, Laptops, etc.) to ensure "apples-to-apples" comparison.
-
-### 2. Statistical Testing
-**Why Mann-Whitney U?**
-- **Normality Check:** A Shapiro-Wilk test confirmed the data follows a **Power Law** (Pareto distribution), not a Bell Curve ($p < 0.05$).
-- **The Solution:** Used the Mann-Whitney U test (Non-Parametric) instead of the T-Test to avoid errors caused by outliers.
-
-### 3. Analysis by Category
-We moved beyond aggregate averages to test specific product categories, revealing that **impulse purchases** (phones) are sensitive to pricing psychology, while **research-heavy purchases** (laptops) are not.
+The aggregate result across all categories shows almost no effect. You only find the phone signal by testing categories separately. An analyst who stops at the aggregate average would conclude charm pricing does not work and recommend removing it everywhere — which would be wrong for phones and correct for laptops. The method matters.
 
 ---
 
-## Why This Matters
+## Methodology
 
-### For Businesses:
-- **Strategy:** Stop losing margin on Laptops. Pricing a MacBook at $1999.99 vs $2000.00 yields **zero volume benefit**, so the company is voluntarily losing $0.01 per unit.
-- **Opportunity:** Aggressively apply .99 pricing to Phones and Accessories to capture the ~5% volume lift.
+**Data source:** Electronic Sales Dataset (Kaggle), 185,950 cleaned transactions.
+
+**Step 1: Normality check.** Before choosing a test, I ran a Shapiro-Wilk test. Sales data follows a power law distribution, not a normal curve. This rules out a standard t-test.
+
+**Step 2: Non-parametric testing.** Used Mann-Whitney U test, which compares distributions without assuming normality and is robust to the outliers present in transaction data.
+
+**Step 3: Category segmentation.** Separated analysis by product category to isolate impulse purchases (phones) from research-heavy purchases (laptops), enabling apples-to-apples comparisons within each segment.
 
 ---
 
+## Business Implication
 
-## Study Limitations
-- **Observational Data:** This is a historical audit, not a controlled A/B test.
-- **Category Scope:** Results are specific to Electronics. Fashion or Grocery sectors may behave differently.
-- **Seasonality:** The dataset is a single snapshot and may not capture seasonal buying shifts.
+A retailer applying .99 pricing uniformly across all categories is:
+- Leaving real volume on the table in phone and accessories categories where the effect is significant.
+- Voluntarily losing $0.01 per unit on laptops and monitors with zero volume benefit in return.
+
+The analysis tells you exactly where charm pricing earns its place and where it does not.
+
+---
+
+## Limitations
+
+- Observational data, not a controlled A/B test. Correlation is measured, not causation confirmed.
+- Results are specific to electronics. Fashion and grocery categories may behave differently.
+- Single time period. Seasonal variation is not captured.
+
+---
+
+## Tools
+
+Python, Pandas, SciPy, Seaborn, Matplotlib, Shapiro-Wilk test, Mann-Whitney U test
