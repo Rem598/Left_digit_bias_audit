@@ -8,7 +8,7 @@ Testing whether charm pricing increases sales across 185,000+ e-commerce transac
 
 Does pricing a product at $19.99 instead of $20.00 actually generate more sales, or is it marketing folklore?
 
-This is one of retail's most widely applied assumptions. Almost every price tag ends in .99. But the assumption is rarely tested with real data. This project tests it directly using inferential statistics on 185,950 transactions across multiple product categories.
+This is one of retail's most widely applied assumptions. Almost every price tag ends in .99. This project tests that assumption directly using inferential statistics on 185,950 transactions across multiple product categories.
 
 **Hypotheses:**
 - H0: There is no significant difference in sales volume between .99 and .00 pricing.
@@ -26,13 +26,13 @@ Charm pricing works, but only for specific product categories.
 | Laptops | -0.04% | No |
 | Monitors | +0.03% | No |
 
-Phones priced at X.99 sell meaningfully more than those at X.00. For high-consideration purchases like laptops, the effect disappears entirely. Pricing psychology is category-specific, not a universal lever.
+Phones priced at X.99 sell meaningfully more than those at X.00. For high-consideration purchases like laptops, the effect disappears entirely. Pricing psychology is category-specific.
 
 ---
 
 ## Why This Is Not Obvious
 
-The aggregate result across all categories shows almost no effect. You only find the phone signal by testing categories separately. An analyst who stops at the aggregate average would conclude charm pricing does not work and recommend removing it everywhere — which would be wrong for phones and correct for laptops. The method matters.
+The aggregate result across all categories shows almost no effect. You only find the phone signal by testing categories separately. An analyst who stops at the aggregate average would conclude charm pricing does not work and recommend removing it everywhere, which would be wrong for phones and correct for laptops.
 
 ---
 
