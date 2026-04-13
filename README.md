@@ -29,7 +29,7 @@ Charm pricing works, but only for specific product categories.
 Phones priced at X.99 sell meaningfully more than those at X.00. For high-consideration purchases like laptops, the effect disappears entirely. Pricing psychology is category-specific.
 
 
-![Results](https://github.com/Rem598/Left_digit_bias_audit/resultschart.png)---
+![Results](https://github.com/Rem598/Left_digit_bias_audit/resultschart.png)
 
 
 
