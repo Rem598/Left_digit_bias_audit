@@ -55,7 +55,7 @@ A retailer applying .99 pricing uniformly across all categories is:
 - Leaving real volume on the table in phone and accessories categories where the effect is significant.
 - Voluntarily losing $0.01 per unit on laptops and monitors with zero volume benefit in return.
 
-The analysis tells you exactly where charm pricing earns its place and where it does not.
+The analysis tells you exactly where charm pricing works and where it does not.
 
 ---
 
